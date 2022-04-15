@@ -46,20 +46,28 @@ a:hover {
 
 }
 
-.col-sm-12.prestation
+.col-sm-footer
+{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.col-sm-6 p
 {
     display: flex;
     justify-content: center;
     text-align: center;
-    height: 40px;
-    font-size: 20px;
 }
-
 
 .container.bloc-lg
 {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -74,8 +82,17 @@ a:hover {
     padding: 50px;
 }
 
+.col-sm-12.prestation
+{
+    font-size: 20px;
+}
+
+
+
+
 .bloc-sm {
     padding: 20px 50px;
+    
 }
 
 .bg-center,
@@ -122,16 +139,19 @@ a:hover {
     font-size: 22px;
 }
 
-.text-center-contact h3
+div.text-center-contact
 {
-    font-size: 30px;
+    font-size: 40px;
     color: #F3976C;
     display: flex;
     justify-content: center;
     text-align: center;
 }
 
-
+.col-sm-3
+{
+    color: #FFFFFF;
+}
 
 .texte-maxime-guibard
 {
@@ -370,12 +390,12 @@ font-size: 17px;
 
 .navbar .nav {
     padding-top: 2px;
-    margin-right: 50px;
+    margin-right: 100px;
     float: right;
     z-index: 1;
     padding-left: 10px;
     list-style: none;
-
+ 
 }
 .navbar .nav a
 {
@@ -508,14 +528,9 @@ nav .caret {
 
 .mg-md {
     margin-top: 10px;
-    margin-bottom: 17px;
+    margin-bottom: 20px;
 }
-.mg-md.text-center-1
-{
-    margin-bottom: 42px;
-    display: flex;
-    text-align: center;
-}
+
 .mg-lg {
     margin-top: 10px;
     margin-bottom: 40px;
@@ -582,11 +597,17 @@ button {
 }
 
 .form-control {
-    border-color: rgba(0, 0, 0, .1);
+
     box-shadow: none;
 }
 
 .scrollToTop {
+    
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(0,0,0,.4);
+    color: rgba(255,255,255,.7);
     width: 40px;
     height: 40px;
     position: fixed;
@@ -595,6 +616,7 @@ button {
     opacity: 0;
     z-index: 500;
     transition: all .3s ease-in-out;
+
 }
 
 .scrollToTop span {
@@ -727,7 +749,7 @@ label,
 a {
     font-family: "helvetica";
     font-weight: 400;
-    color: #575757;
+    color: #575757!important;
 }
 .form-group
 {
@@ -736,19 +758,19 @@ a {
 
 input#name
 {
-    width: 200px;
+    width: 100%;
     height: 30px;
 }
 
 input#email
 {
-    width: 400px;
+    width: 100%;
     height: 30px;
 }
 
 input#input_504
 {
-    width: 400px;
+    width: 100%;
     height: 50px;
 
 }
@@ -791,17 +813,20 @@ p {
 }
 
 .cta-hero {
+    width: 100%;
     margin-top: 22px;
     color: #FFFFFF!important;
     text-transform: uppercase;
     padding: 12px 28px 12px 28px;
     font-size: 16px;
     font-weight: 700;
+    border-radius: 10px;
 }
 
-.social {
+a.social {
     max-width: 400px;
     margin: auto auto auto auto;
+    color: #FFFFFF;
 }
 
 h2 {
@@ -810,10 +835,10 @@ h2 {
 }
 
 h3 {
-    font-size: 25px;
+    font-size: 15px;
     text-transform: uppercase;
     font-weight: 700;
-
+    color: #333333!important;
 }
 .ltc-white.bold-link
 {
@@ -871,6 +896,9 @@ h4 {
     background-color: #FFFFFF;
 }
 
+.bgc-dark-slate-blue {
+    background-color: #364577;
+}
 
 .bgc-atomic-tangerine {
     background-color: #F3976C;
@@ -878,14 +906,12 @@ h4 {
 
 .tc-white {
     color: #FFFFFF!important;
-    
+  
 }
 
 .btn-atomic-tangerine {
     background: #F3976C;
     color: #FFFFFF!important;
-
-
 }
 
 .btn-atomic-tangerine:hover {
@@ -929,12 +955,6 @@ h4 {
 .bg-presentation {
     background-image: url("img/image-de-presentation.bmp");
 }
-
-.text-center-contact-2.h3
-{
-    color: #FFFFFF;
-}
-
 
 @media (max-width: 1024px) {
     .bloc {
@@ -1139,6 +1159,12 @@ h4 {
         width: 180px;
         height: 320px;
     }
+
+
+
+
+
+
 }
 
 @media (max-width: 400px) {
