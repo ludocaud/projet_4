@@ -62,14 +62,20 @@ a:hover {
     text-align: center;
 }
 
-.container.bloc-lg
+.row
 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 }
 
+.social
+{
+    width: 47px;
+    height: 50px;
+}
 
 .bloc-lg {
     padding: 100px 50px;
@@ -367,11 +373,11 @@ font-size: 17px;
 
 .navbar-brand {
     height: auto;
-    padding: 3px 15px;
-    font-size: 25px;
-    font-weight: normal;
-    font-weight: 600;
-    line-height: 44px;
+padding: 3px 15px;
+font-size: 25px;
+font-weight: normal;
+font-weight: 600;
+line-height: 44px;
 }
 
 .navbar-brand img {
